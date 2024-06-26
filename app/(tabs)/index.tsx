@@ -59,8 +59,11 @@ function FitbitOverview() {
       const data = await response.json();
 
       const access_token = data.access_token;
+      const refresh_token = data.refresh_token;
+
       console.log('Data:', data)
       console.log('Access token:', access_token);
+      console.log('Refresh token:', refresh_token);
 
       // if (typeof access_token === 'string') { 
       //   fetchHeartRate(access_token);
